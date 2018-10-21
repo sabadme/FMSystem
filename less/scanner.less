@@ -1,0 +1,51 @@
+@import "variable.less";
+
+.scanner-container {
+	width: 100%;
+	padding: 20px;
+
+	.scan-wrapper {
+		form {
+			.flex-layout;
+			.flex-justify-content(center);
+			.flex-wrap(wrap);
+		}
+
+		button {
+			margin-top: 0;
+		}
+
+		input {
+			width: 100%;
+			margin: 20px 0;
+		}
+
+		video {
+			height: 200px;
+		}
+	}
+}
+
+.library-container {
+	.flex-layout;
+	padding: 30px;
+	border: 1px solid @border-color;
+	flex-wrap: wrap;
+
+	.qr-equipment {
+		width: 18%;
+		text-align: center;
+		margin-left: 20px;
+		margin-bottom: 10px;
+
+		span {
+			display: block;
+		}
+
+
+		&:nth-child(5n + 1) {
+			margin-left: 0;
+		}
+
+	}
+}

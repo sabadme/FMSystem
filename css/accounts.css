@@ -1,0 +1,141 @@
+.accounts-container {
+  padding: 20px;
+  width: 100%;
+}
+.accounts-container .top-container strong {
+  font-size: 1.2857142857142858rem;
+}
+.accounts-container .search {
+  float: right;
+  margin-bottom: 20px;
+}
+.accounts-container .box-container {
+  clear: right;
+  padding: 20px;
+  border: 1px solid #b4b4b4;
+  margin-bottom: 30px;
+}
+.accounts-container .table-container .teacherUpdates {
+  max-width: 110px;
+  font-size: 0.8571428571428571rem;
+}
+.accounts-container .user-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.accounts-container .user-box span {
+  font-size: 0.9285714285714286rem;
+  display: inline-block;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+.accounts-container .user-box div {
+  width: 50%;
+  margin-right: 20px;
+}
+.accounts-container .user-box div:last-child {
+  margin-right: 0;
+}
+/*@media only screen and (max-device-width : 375px) {
+
+.accounts-container { 
+
+    .box-container {
+      .user-box{
+        display: block;
+
+        .user-box-input{
+          width: 100%;
+        }
+      }
+    }
+
+    .openOfficeUpdateModal {
+        .font-size(12);
+        max-width: 110px;
+    }
+
+    .search {
+      max-width: 100%;
+    }
+
+    #myTable1 {
+      table, thead, tbody, th, td, tr { 
+          display: block; 
+        }
+        
+        thead tr { 
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+        
+        tr { 
+          border: 1px solid #ccc;
+          padding: 10px; 
+        }
+        tr:nth-child(even) {
+          background-color: #f2f2f2;
+          border: 1px solid #fff;
+        }
+        
+        td { 
+          border: none;
+          border-bottom: 1px solid #eee; 
+          position: relative;
+          padding-left: 50%; 
+        }
+        
+        td:before { 
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          width: 45%; 
+          padding-right: 10px; 
+          white-space: nowrap;
+        }
+    }
+
+    #myTable2 {
+
+
+      table, thead, tbody, th, td, tr { 
+        display: block; 
+      }
+      
+      thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      
+      tr { 
+        border: 1px solid #ccc;
+        padding: 10px; 
+      }
+      tr:nth-child(even) {
+          background-color: #f2f2f2;
+          border: 1px solid #fff;
+        }
+      
+      td { 
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+      }
+      
+      td:before { 
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+      }
+    } 
+  }
+}*/

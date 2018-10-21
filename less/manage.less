@@ -1,0 +1,175 @@
+@import "variable.less";
+
+
+.manage-container {
+  padding: 20px;
+
+  .inner-form-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid @border-color;
+
+    .equipmenu-box {
+      .flex-layout;
+      width: 100%;
+      text-align: center;
+
+      .menubox {
+        width: 20%;
+        padding: 40px 20px;
+        border: 1px solid @cobalt;
+        margin: 20px;
+        background: powderblue;
+        
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    label {
+      .font-size(13);
+      text-transform: uppercase;
+      font-family: @font-family-base;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+      span {
+            .font-size(25);
+            font-family: sans-serif;
+            text-transform: capitalize;
+          }
+      
+      .box-container {
+        padding: 20px;
+        border: 1px solid @cobalt;
+        margin-bottom: 30px;
+        margin-top: 10px;
+      }
+
+      .user-box {
+        display: flex;
+
+          span {
+            .font-size(16);
+            font-family: sans-serif;
+          }
+
+          div {
+            width: 50%;
+            padding: 20px;
+          }
+      }
+
+  }
+
+  &.select-equipments {
+    #wrapper {
+      padding-left: 0;
+    }
+
+    button {
+      margin-top: 20px;
+      max-width: 200px;
+    }
+  }
+
+  &.room-update,
+  &.view-reports {
+    #wrapper {
+      padding-left: 0;
+    }
+  }
+
+  .tabs {
+    position: relative;
+
+    li {
+      position: absolute;
+      top: 0;
+      padding: 15px 20px;
+      border: 1px solid @border-color;
+      border-bottom: 0;
+      cursor: pointer;
+
+      & + div {
+        display: none;
+      }
+
+      span {
+        font-family: @font-family-base;
+        .font-size(17);
+        text-transform: uppercase;
+      }
+
+      &:nth-of-type(2) {
+        left: 103px;
+      }
+
+      &:nth-of-type(3) {
+        left: 224px;
+      }
+
+      &:nth-of-type(4) {
+        left: 400px;
+      }
+
+      &.active {
+        background: @cobalt;
+
+        span {
+          color: @white;
+        }
+
+        & + div {
+          display: block;
+          padding-top: 48px;
+        }
+      }
+    }
+  }
+
+  &.room-management {
+    input {
+      padding: 10px;
+    }
+
+    .inner-form-container {
+      display: block;
+    }
+  }
+
+  &.registration {
+    .table-container {
+      margin-top: 10px;
+    }
+
+    .set-container {
+      .table-container {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .add {
+      margin-bottom: 20px; 
+    }
+    }
+  }
+
+  &.venue-container {
+    .tabs {
+      li:nth-of-type(3) {
+        left: 227px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width : 768px) {
+
+  .tabs {
+    display: block;
+  }
+}

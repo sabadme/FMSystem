@@ -1,0 +1,33 @@
+.equipments-container {
+  padding: 20px;
+}
+.equipments-container .search {
+  float: right;
+  margin-bottom: 20px;
+}
+.equipments-container .box-container {
+  clear: right;
+  padding: 20px;
+  border: 1px solid #b4b4b4;
+  margin-bottom: 30px;
+}
+.equipments-container .user-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.equipments-container .user-box span {
+  font-size: 0.9285714285714286rem;
+  display: inline-block;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+.equipments-container .user-box div {
+  width: 50%;
+  margin-right: 20px;
+}
+.equipments-container .user-box div:last-child {
+  margin-right: 0;
+}

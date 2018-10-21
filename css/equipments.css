@@ -1,0 +1,187 @@
+.equipments-container {
+  padding: 20px;
+  width: 100%;
+}
+.equipments-container .search {
+  float: right;
+  margin-bottom: 20px;
+}
+.equipments-container .file {
+  padding: 0;
+  border: 0;
+}
+.equipments-container .box-container {
+  clear: right;
+  padding: 20px;
+  border: 1px solid #b4b4b4;
+  margin-bottom: 30px;
+}
+.equipments-container span {
+  font-size: 0.9285714285714286rem;
+  display: inline-block;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+.equipments-container .user-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.equipments-container .user-box div {
+  width: 50%;
+  margin-right: 20px;
+}
+.equipments-container .user-box div:last-child {
+  margin-right: 0;
+}
+.equipments-container .user-box .radioContainer {
+  width: 100%;
+}
+.equipments-container .user-box .radioContainer > div {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.equipments-container .user-box .radioContainer > div input {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.equipments-container .user-box .radioContainer > div span {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.EQ-Page {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.EQ-Page .EQ-Container {
+  border: 1px solid #b4b4b4;
+  width: 50%;
+}
+.EQ-Page .EQ-Container .EQ-Img {
+  padding: 20px;
+}
+.EQ-Page .EQ-Container .EQ-Img img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.EQ-Page .EQ-Date {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 10px;
+}
+.EQ-Page .EQ-Date span {
+  padding: 20px;
+  background: skyblue;
+  display: block;
+  font-size: 1.4285714285714286rem;
+  text-align: center;
+}
+.EQ-Page .EQ-Date > div {
+  width: 50%;
+}
+.EQ-Page .EQ-Date i {
+  display: block;
+  font-family: 'Oswald-reg';
+  margin-bottom: 5px;
+  text-align: center;
+}
+.EQ-Page .EQ-Info {
+  text-align: center;
+  background: #283142;
+  color: #fff;
+  padding: 20px;
+  width: 50%;
+}
+.EQ-Page .EQ-Info .meter-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  /* meter {
+        -webkit-appearance: none;
+        background: gray;
+      }
+      meter > span {
+        height: 14px;
+        margin: 0;
+        max-width: 100px;
+      }*/
+  /*meter[value="calc(<= 50%)"] > span {
+        width: 25%;
+        background: red;
+      }
+      meter[value="50"] > span {
+        width: 50%;
+        background: yellow;
+      }
+      meter[value="75"] > span {
+        width: 75%;
+        background: orange;
+      }
+      meter[value="4"] > span {
+        width: 100%;
+        background: green;
+      }*/
+}
+.EQ-Page .EQ-Info .meter-container span {
+  font-size: 0.8571428571428571rem;
+  margin: 0 10px 0 0;
+  font-family: 'Oswald-light';
+  text-transform: uppercase;
+}
+.EQ-Page .EQ-Info span {
+  margin-top: 20px;
+  font-size: 1.2857142857142858rem;
+  font-family: 'Oswald-reg';
+  display: block;
+}
+.EQ-Page .EQ-Info span.status {
+  padding: 10px;
+  background: #313a4b;
+  text-transform: uppercase;
+}
+.new-equipments-container {
+  margin-bottom: 30px;
+}
+.new-equipments-container > strong {
+  font-size: 1.0714285714285714rem;
+  font-family: 'Oswald-reg';
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+@media all and (max-width: 679px) {
+  .EQ-Page {
+    display: block;
+  }
+  .EQ-Page .EQ-Container {
+    width: 100%;
+  }
+  .EQ-Page .EQ-Container .EQ-Img .item .clearfix {
+    max-width: 600px !important;
+  }
+  .EQ-Page .EQ-Info {
+    width: 100%;
+  }
+}

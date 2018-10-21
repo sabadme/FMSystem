@@ -1,0 +1,78 @@
+@import "variable.less";
+
+.catalog-container {
+	margin-top: 80px;
+    padding: 0 25px;
+}
+
+.equipments {
+	.flex-layout;
+	.flex-direction(column);
+	.flex-value(0 1 23.5%);
+	.flex-justify-content(space-between);
+	border: 1px solid @mine-shaft;
+	padding: 10px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	font-family: @font-family-base;
+	text-transform: uppercase;
+	background: @white;
+
+	&:nth-child(4n + 1) {
+		margin-left: 0;
+	}
+
+	.equipment-code {
+		margin: 10px 0;
+		text-transform: none;
+	}
+
+	.equipment-name {
+		.font-size(20);
+		margin-bottom: 10px;
+		font-weight: 600;
+	}
+
+	.equipment-start, .equipment-end {
+		.font-size(13);
+		color: #808080;
+		margin-bottom: 5px;
+	}	
+
+	a {
+		margin: 20px;
+	}
+
+	img {
+		width: 100%;
+	    height: auto;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+}
+
+.pagination {
+	margin: 20px 0;
+	font-weight: 600;
+	span {
+		.font-size(15);
+		font-family: @font-family-base;
+	}
+	a {
+		background: @color-gray;
+		padding: 5px 10px;
+		color: @white;
+	}
+	a:hover {
+		background: @cobalt;
+		color: @white;
+	}
+
+	b {
+		padding: 5px 10px;
+		background: @cobalt;
+		color: @white;
+	}
+
+}

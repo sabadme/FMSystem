@@ -1,0 +1,58 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.modal .modal-content {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 1000px 1000px #848484;
+  -moz-box-shadow: 0 0 1000px 1000px #848484;
+  box-shadow: 0 0 1000px 1000px #848484;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  width: 500px;
+  height: 450px;
+}
+.modal h1 {
+  font-size: 2.142857142857143rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.modal strong {
+  font-size: 1.4285714285714286rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: normal;
+  display: block;
+}
+.modal textarea {
+  font-size: 1rem;
+  font-family: sans-serif;
+  width: 100%;
+  padding: 10px;
+  min-height: 150px;
+  resize: none;
+  overflow-y: auto;
+}
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.modal .close:hover {
+  opacity: 0.8;
+}

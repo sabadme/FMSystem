@@ -1,0 +1,130 @@
+.manage-container {
+  padding: 20px;
+}
+.manage-container .inner-form-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #b4b4b4;
+}
+.manage-container .inner-form-container .equipmenu-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+.manage-container .inner-form-container .equipmenu-box .menubox {
+  width: 20%;
+  padding: 40px 20px;
+  border: 1px solid #283142;
+  margin: 20px;
+  background: powderblue;
+}
+.manage-container .inner-form-container .equipmenu-box .menubox:hover {
+  cursor: pointer;
+}
+.manage-container .inner-form-container label {
+  font-size: 0.9285714285714286rem;
+  text-transform: uppercase;
+  font-family: 'Oswald-reg';
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.manage-container .inner-form-container span {
+  font-size: 1.7857142857142858rem;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.manage-container .inner-form-container .box-container {
+  padding: 20px;
+  border: 1px solid #283142;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.manage-container .inner-form-container .user-box {
+  display: flex;
+}
+.manage-container .inner-form-container .user-box span {
+  font-size: 1.1428571428571428rem;
+  font-family: sans-serif;
+}
+.manage-container .inner-form-container .user-box div {
+  width: 50%;
+  padding: 20px;
+}
+.manage-container.select-equipments #wrapper {
+  padding-left: 0;
+}
+.manage-container.select-equipments button {
+  margin-top: 20px;
+  max-width: 200px;
+}
+.manage-container.room-update #wrapper,
+.manage-container.view-reports #wrapper {
+  padding-left: 0;
+}
+.manage-container .tabs {
+  position: relative;
+}
+.manage-container .tabs li {
+  position: absolute;
+  top: 0;
+  padding: 15px 20px;
+  border: 1px solid #b4b4b4;
+  border-bottom: 0;
+  cursor: pointer;
+}
+.manage-container .tabs li + div {
+  display: none;
+}
+.manage-container .tabs li span {
+  font-family: 'Oswald-reg';
+  font-size: 1.2142857142857142rem;
+  text-transform: uppercase;
+}
+.manage-container .tabs li:nth-of-type(2) {
+  left: 103px;
+}
+.manage-container .tabs li:nth-of-type(3) {
+  left: 224px;
+}
+.manage-container .tabs li:nth-of-type(4) {
+  left: 400px;
+}
+.manage-container .tabs li.active {
+  background: #283142;
+}
+.manage-container .tabs li.active span {
+  color: #fff;
+}
+.manage-container .tabs li.active + div {
+  display: block;
+  padding-top: 48px;
+}
+.manage-container.room-management input {
+  padding: 10px;
+}
+.manage-container.room-management .inner-form-container {
+  display: block;
+}
+.manage-container.registration .table-container {
+  margin-top: 10px;
+}
+.manage-container.registration .set-container .table-container {
+  width: 100%;
+  margin-left: 0;
+}
+.manage-container.registration .set-container .add {
+  margin-bottom: 20px;
+}
+.manage-container.venue-container .tabs li:nth-of-type(3) {
+  left: 227px;
+}
+@media only screen and (max-device-width: 768px) {
+  .tabs {
+    display: block;
+  }
+}

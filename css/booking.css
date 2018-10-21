@@ -1,0 +1,168 @@
+.booking-container {
+  padding: 20px;
+  width: 100%;
+}
+.booking-container .booking-wrapper {
+  margin-bottom: 30px;
+}
+.booking-container .grid-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.booking-container .grid-container label {
+  font-family: 'Oswald-reg';
+  margin-bottom: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.booking-container .grid-container .field {
+  width: 32%;
+  margin-left: 10px;
+}
+.booking-container .grid-container .field:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.booking-container .grid-container .field .search-box,
+.booking-container .grid-container .field .search-venue {
+  position: relative;
+}
+.booking-container .grid-container .field .search-box .result,
+.booking-container .grid-container .field .search-venue .result,
+.booking-container .grid-container .field .search-box .Vresult,
+.booking-container .grid-container .field .search-venue .Vresult {
+  display: none;
+  position: absolute;
+  background: #313a4b;
+  width: 100%;
+  top: 37px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.booking-container .grid-container .field .search-box .result::-webkit-scrollbar,
+.booking-container .grid-container .field .search-venue .result::-webkit-scrollbar,
+.booking-container .grid-container .field .search-box .Vresult::-webkit-scrollbar,
+.booking-container .grid-container .field .search-venue .Vresult::-webkit-scrollbar {
+  width: 6px;
+}
+.booking-container .grid-container .field .search-box .result::-webkit-scrollbar-thumb,
+.booking-container .grid-container .field .search-venue .result::-webkit-scrollbar-thumb,
+.booking-container .grid-container .field .search-box .Vresult::-webkit-scrollbar-thumb,
+.booking-container .grid-container .field .search-venue .Vresult::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  background-color: #b6b6b6;
+}
+.booking-container .grid-container .field .search-box .result::-webkit-scrollbar-track,
+.booking-container .grid-container .field .search-venue .result::-webkit-scrollbar-track,
+.booking-container .grid-container .field .search-box .Vresult::-webkit-scrollbar-track,
+.booking-container .grid-container .field .search-venue .Vresult::-webkit-scrollbar-track {
+  border: 2px solid #fff;
+  background: #c3c3c3;
+}
+.booking-container .grid-container .field .search-box .result > p,
+.booking-container .grid-container .field .search-venue .result > p,
+.booking-container .grid-container .field .search-box .Vresult > p,
+.booking-container .grid-container .field .search-venue .Vresult > p {
+  font-family: 'Oswald-reg';
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.booking-container .grid-container .field .search-box .result > p:hover,
+.booking-container .grid-container .field .search-venue .result > p:hover,
+.booking-container .grid-container .field .search-box .Vresult > p:hover,
+.booking-container .grid-container .field .search-venue .Vresult > p:hover {
+  background: #3b465a;
+}
+.booking-container .grid-container .equipments-field {
+  width: 100%;
+}
+.booking-container .grid-container .equipments-field .search {
+  float: none;
+}
+.booking-container .grid-container .equipments-field .equipments-wrapper {
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+.booking-container .grid-container .equipments-field .equipments-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+.booking-container .grid-container .equipments-field .equipments-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  background-color: #b6b6b6;
+}
+.booking-container .grid-container .equipments-field .equipments-wrapper::-webkit-scrollbar-track {
+  border: 2px solid #fff;
+  background: #c3c3c3;
+}
+.booking-container .grid-container .equipments-field .equipments-wrapper > label {
+  margin-bottom: 10px;
+}
+.booking-container .grid-container .equipments-field .equipments-wrapper > div {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.booking-container .grid-container .equipments-field .equipments-wrapper > div label {
+  font-size: 1.0714285714285714rem;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.booking-container .grid-container .equipments-field .equipments-wrapper > div input {
+  display: inline-block;
+  margin-bottom: 0;
+  width: auto;
+}
+.booking-container .booking-table #wrapper {
+  width: 100%;
+  padding-left: 0;
+}
+.booking-container .booking-table > strong {
+  font-size: 1.2142857142857142rem;
+  font-family: 'Oswald-reg';
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+.booking-container .booking-table th,
+.booking-container .booking-table td {
+  font-size: 0.7857142857142857rem;
+}
+@media only screen and (max-device-width: 679px) {
+  .booking-container tbody {
+    max-height: 440px;
+  }
+  .booking-container .grid-container {
+    display: block;
+  }
+  .booking-container .grid-container .equipments-field .search {
+    max-width: 100%;
+  }
+  .booking-container .grid-container .equipments-field label {
+    font-size: 0.8571428571428571rem;
+  }
+  .booking-container .grid-container .field {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .booking-container .grid-container .field label {
+    font-size: 0.8571428571428571rem;
+  }
+  .booking-container .grid-container .field input {
+    margin-bottom: 19px;
+  }
+}

@@ -1,0 +1,181 @@
+.report-container {
+  width: 100%;
+  padding: 20px;
+}
+.report-container .report-inner-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  border: 1px solid #ccc;
+}
+.report-container .report-inner-container .image-container,
+.report-container .report-inner-container .report-info-container {
+  width: 50%;
+}
+.report-container .report-inner-container .image-container {
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+.report-container .report-inner-container .image-container img {
+  background-position: center !important;
+  background-size: contain !important;
+  width: 100%;
+  max-width: 75%;
+  margin: 20px 0;
+}
+.report-container .report-inner-container .report-info-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.report-container .report-inner-container .report-info-container h1 {
+  font-size: 2.857142857142857rem;
+  font-family: 'Oswald-reg';
+  margin: 20px 0;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+.report-container .report-inner-container .report-info-container span {
+  font-family: 'Oswald-reg';
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+.report-container .report-inner-container .report-info-container span.equipment-code {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.report-container .report-inner-container .report-info-container span:last-child {
+  margin-bottom: 0;
+}
+.report-container .report-inner-container .report-info-container span b {
+  text-transform: uppercase;
+}
+.report-container .report-inner-container .report-info-container .qr-img-container {
+  padding: 0 50px;
+}
+.report-container .report-inner-container .report-info-container .qr-img-container img {
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.report-container .report-inner-container .report-info-container .qr-img-container .button {
+  display: block;
+  font-family: 'Oswald-reg';
+  text-transform: uppercase;
+  color: #fff;
+  background: #283142;
+  padding: 10px;
+  max-width: 250px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0;
+}
+.report-container .report-inner-container .report-info-container form {
+  margin: 0 20px;
+}
+.report-container .report-inner-container .report-info-container form > button {
+  margin: 10px 0;
+}
+.report-container .report-inner-container .report-info-container textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 12px 20px;
+  border-color: #ccc;
+  resize: none;
+  font-family: 'Oswald-reg';
+  font-size: 1.0714285714285714rem;
+}
+.report-container .report-inner-container .report-info-container textarea:focus {
+  outline: none;
+  border-color: #283142;
+}
+.report-container .message-container .viewbtn {
+  display: inline-block;
+  padding: 15px 20px;
+  background: #283142;
+  color: #fff;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.report-container .message-container .viewbtn:hover {
+  background: #323d52;
+}
+.report-container .message-container .viewbtn .fa-angle-down {
+  margin-left: 5px;
+}
+.report-container .message-container .viewbtn.active .fa-angle-down:before {
+  content: '\f106';
+}
+.report-container .message-container .viewbtn.active ~ .memo-container {
+  display: block;
+}
+.report-container .message-container .memo-container {
+  display: none;
+  overflow-y: auto;
+  max-height: 300px;
+  padding-right: 10px;
+}
+.report-container .message-container .memo-container::-webkit-scrollbar {
+  width: 6px;
+}
+.report-container .message-container .memo-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  background-color: #b6b6b6;
+}
+.report-container .message-container .memo-container::-webkit-scrollbar-track {
+  border: 2px solid #fff;
+  background: #c3c3c3;
+}
+.report-container .ReportBox button {
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+.report-container .ReportBox textarea {
+  resize: none;
+  padding: 20px;
+  width: 100%;
+  min-height: 150px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+.report-container .ReportBox select {
+  max-width: 200px;
+}
+.report-container .ReportBox .Memo {
+  padding: 20px;
+  border: 1px solid #b4b4b4;
+  margin: 10px 0;
+}
+.report-container .ReportBox .Memo:first-child {
+  margin-top: 0;
+}
+.report-container .ReportBox .Memo .datetime {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 0.8571428571428571rem;
+  color: gray;
+}
+.report-container .ReportBox .Memo .message {
+  display: block;
+  font-size: 1.1428571428571428rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.report-container .ReportBox .Memo .name {
+  font-size: 1.7857142857142858rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}

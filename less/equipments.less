@@ -1,0 +1,204 @@
+@import "variable.less";
+
+.equipments-container {
+	padding: 20px;
+  width: 100%;
+
+	.search {
+		float: right;
+		margin-bottom: 20px;
+	}
+
+  .file {
+    padding: 0;
+    border: 0;
+  }
+
+	.box-container {
+		clear: right;
+        padding: 20px;
+        border: 1px solid @border-color;
+        margin-bottom: 30px;
+    }
+
+    span {
+         .font-size(13);
+         display: inline-block;
+         font-family: sans-serif;
+         margin-bottom: 5px;
+        }
+
+    .user-box {
+       .flex-layout;
+
+        div {
+           width: 50%;
+           margin-right: 20px;
+
+           &:last-child {
+           		margin-right: 0;
+           }
+        }
+
+        .radioContainer {
+          width: 100%;
+
+          & > div {
+            width: 100%;
+            margin-bottom: 10px;
+
+            input {
+              display: inline-block;
+              width: auto;
+              vertical-align: middle;
+              margin-bottom: 0;
+            }
+
+            span {
+              margin-left: 10px;
+              margin-bottom: 0;
+            }
+          }
+        }
+    }
+}
+
+.EQ-Page {
+  .flex-layout;
+
+  .EQ-Container{
+    border: 1px solid @border-color;
+    width: 50%;
+
+    .EQ-Img {
+      padding: 20px;
+       
+      img {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .EQ-Date {
+    .flex-layout;
+    margin-top: 10px;
+
+    span {
+      padding: 20px;
+      background: skyblue;
+      display: block;
+      .font-size(20);
+      text-align:  center;
+    }
+
+    & > div {
+      width: 50%;
+    }
+
+    i {
+      display: block;
+      font-family: @font-family-base;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+  }
+
+  .EQ-Info {
+    text-align: center;
+    background: @cobalt;
+    color: @white;
+    padding: 20px;
+    width: 50%;
+
+    .meter-container {
+      .flex-layout;
+      .flex-align(center);
+      .flex-justify-content(center);
+
+      span {
+        .font-size(12);
+        margin: 0 10px 0 0;
+        font-family: @font-family-light;
+        text-transform: uppercase;
+      }
+
+     /* meter {
+        -webkit-appearance: none;
+        background: gray;
+      }
+      meter > span {
+        height: 14px;
+        margin: 0;
+        max-width: 100px;
+      }*/
+      /*meter[value="calc(<= 50%)"] > span {
+        width: 25%;
+        background: red;
+      }
+      meter[value="50"] > span {
+        width: 50%;
+        background: yellow;
+      }
+      meter[value="75"] > span {
+        width: 75%;
+        background: orange;
+      }
+      meter[value="4"] > span {
+        width: 100%;
+        background: green;
+      }*/
+    }
+
+    span{
+      margin-top: 20px;
+      .font-size(18);
+      font-family: @font-family-base;
+      display: block;
+
+      &.status {
+        padding: 10px;
+        background: @sail;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.new-equipments-container {
+  margin-bottom: 30px;
+
+
+  & > strong {
+      .font-size(15);
+      font-family: @font-family-base;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: block;
+  }
+}
+
+
+@media all and (max-width : 679px) { 
+  .EQ-Page {
+    display: block;
+
+     .EQ-Container {
+      width: 100%;
+
+      .EQ-Img {
+        .item {
+          .clearfix {
+            max-width: 600px !important; 
+          }
+        }
+      }
+    }
+
+     .EQ-Info {
+      width: 100%;
+     }
+  }
+}

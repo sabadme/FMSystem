@@ -1,0 +1,53 @@
+.scanner-container {
+  width: 100%;
+  padding: 20px;
+}
+.scanner-container .scan-wrapper form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.scanner-container .scan-wrapper button {
+  margin-top: 0;
+}
+.scanner-container .scan-wrapper input {
+  width: 100%;
+  margin: 20px 0;
+}
+.scanner-container .scan-wrapper video {
+  height: 200px;
+}
+.library-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 30px;
+  border: 1px solid #b4b4b4;
+  flex-wrap: wrap;
+}
+.library-container .qr-equipment {
+  width: 18%;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.library-container .qr-equipment span {
+  display: block;
+}
+.library-container .qr-equipment:nth-child(5n + 1) {
+  margin-left: 0;
+}
