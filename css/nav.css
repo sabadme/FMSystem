@@ -1,7 +1,6 @@
 .main-nav {
   background: #313a4b;
   z-index: 1;
-  border-radius: 0 0 45px 0;
 }
 .main-nav .logo-block img {
   max-width: 250px;
@@ -141,8 +140,8 @@
 }
 .main-nav .menu li.booking-btn .counter {
   position: absolute;
-  top: 16px;
-  right: 150px;
+  top: 24px;
+  left: 23px;
   font-size: 0.7142857142857143rem;
   color: #fff;
   padding: 3px 5px;
@@ -189,9 +188,6 @@
 .main-nav .menu li button:focus {
   outline: none;
 }
-.main-nav .menu li button.report:before {
-  content: '\e908';
-}
 .main-nav .menu li button.dashboard:before {
   content: '\e902';
 }
@@ -211,7 +207,7 @@
   content: '\e901';
 }
 .main-nav .menu li button.equips:before {
-  content: '\e905';
+  content: '\e910';
 }
 .main-nav .menu li button.rooms:before {
   content: '\e90b';

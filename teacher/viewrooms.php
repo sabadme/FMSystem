@@ -1,13 +1,12 @@
 <?php 
 if(isset($_REQUEST['viewrooms'])){
-	$viewrooms=$_REQUEST['viewrooms']
+	echo $viewrooms=$_REQUEST['viewrooms']
 
  ?>
 
-<div class="manage-container">
+<div class="manage-container with-banner">
 	<div class="top-container">
     <strong>ROOMS</strong>
-    <span><?php echo $data_teacherName['account']; ?></span>
 
     <div class="notifs-container">
        <strong class="notifs" value="<?php echo $accountname; ?>" id="valueNotif"></strong>

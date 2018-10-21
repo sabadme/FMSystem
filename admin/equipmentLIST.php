@@ -1,4 +1,4 @@
-<?php
+<?php 	
 $servername ="localhost";
 $username="root";
 $password="";
@@ -54,9 +54,14 @@ while($dataEquipment = mysql_fetch_array($sqlEquipment)){
 			<button type="submit" class="equipment-name" name="equipmentPage" value="<?php echo $dataEquipment['id']; ?>"><?php echo $dataEquipment['equipment_name']; ?></button>
 			</form>
 		</td>
-		<td data-th="QR ID"><?php echo $dataEquipment['equipment_code']; ?></td>
+
+		<td><?php echo $dataEquipment['equipment_code']; ?></td>
 		<td data-th="Manufacturer">wala pa</td>
 		<td data-th="Serial">wala pa</td>
+		<!-- <td data-th="Name"><?php echo $dataEquipment['equipment_name']; ?></td> -->
+		<td data-th="QR ID"><?php echo $dataEquipment['equipment_code']; ?></td>
+	<!-- 	<td data-th="Manufacturer">wala pa</td>
+		<td data-th="Serial">wala pa</td> -->
 		<td data-th="Condition"><?php echo $dataEquipment['equipment_status']; ?></td>
 
 		<?php 	
@@ -92,19 +97,14 @@ while($dataEquipment = mysql_fetch_array($sqlEquipment)){
 				<?php
 			}
 		 ?>
-
-		 <td data-th="Select">
+		 <td>
 		 	<form action="" method="POST">
-		 		<select name="statusEquipment" 
-		 		style= "margin-bottom: 0;
-		 		    	padding: 5px 7px;">
-
-		 			<option value="" hidden>Select</option>
+		 		<select name="statusEquipment">
 		 			<option>Up To Date</option>
 		 			<option>Broken</option>
 		 		</select>
 		 </td>
-		 <td data-th="Action">
+		 <td>
 		 		<button name="updateEquipmentstatus" type="submit" value="<?php echo $equipmentID; ?>">Update</button>
 		 	</form>
 		 </td>
@@ -116,7 +116,7 @@ while($dataEquipment = mysql_fetch_array($sqlEquipment)){
 
  ?>		
 
-<!--  <script>
+ <script>
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -132,7 +132,7 @@ function showDivs(n) {
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
-  x[slideIndex-1].css('display', 'block'); 
+  x[slideIndex-1].style.display = "block";  
 }
 </script>
 
@@ -148,7 +148,7 @@ function carousel() {
     }
     slideIndex2++;
     if (slideIndex2 > x.length) {slideIndex2 = 1} 
-    x[slideIndex2-1].css('display', 'block'); 
+    x[slideIndex2-1].style.display = "block"; 
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
-</script> -->
+</script>

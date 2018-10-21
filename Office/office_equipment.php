@@ -12,11 +12,11 @@ $equipmentPic = $data_equipment['equipment_filename'];
 
 ?>
 <tr>
-	<td data-th="Image"><?php echo "<img style='width: 150px;' src='EquipmentPicture/".$equipmentPic."'>" ?></td>
-	<td data-th="Name"><?php echo $data_equipment['equipment_name'] ?></td>
-	<td data-th="QR ID"><?php echo $data_equipment['equipment_code'] ?></td>
-	<td data-th="Date Start"><?php echo $data_equipment['equipment_start'] ?></td>
-	<td data-th="Date End"><?php echo $data_equipment['equipment_end'] ?></td>
+	<td><?php echo "<img style='width: 50px; height: 50px' src='EquipmentPicture/".$equipmentPic."'>" ?></td>
+	<td><?php echo $data_equipment['equipment_name'] ?></td>
+	<td><?php echo $data_equipment['equipment_code'] ?></td>
+	<td><?php echo $data_equipment['equipment_start'] ?></td>
+	<td><?php echo $data_equipment['equipment_end'] ?></td>
 	
 </tr>
 <?php

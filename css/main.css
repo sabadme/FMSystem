@@ -1,24 +1,9 @@
-.main-index header {
+.main-index header,
+.main-index footer {
   display: none;
 }
 .main-index .page-main-inner {
   padding: 70px 20px 0;
-}
-.main-index .lSPager.lSGallery {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  margin: 15px auto !important;
-}
-.main-index .lSPager.lSGallery li {
-  width: 100% !important;
-  max-width: 150px;
-}
-.main-index .lSPager.lSGallery li img {
-  margin: 0;
-  max-width: 100%;
 }
 .main-index .top-container {
   display: -webkit-box;
@@ -91,28 +76,17 @@
   cursor: pointer;
 }
 .main-index .top-container .notifs.active ~ .notifs-wrapper {
-  z-index: 999;
   display: block;
   position: absolute;
-  right: 0;
-  top: 25px;
-  width: 400px;
+  right: 52px;
+  top: 50px;
+  width: 100%;
+  max-width: 322px;
   background: #fff;
   border: 1px solid #ccc;
 }
 .main-index .top-container .notifs-container > .notifs-wrapper {
   display: none;
-}
-.main-index .top-container .notifs-container > .notifs-wrapper > div {
-  padding: 5px 10px;
-  display: block;
-  border-bottom: 1px solid black;
-  height: 40px;
-}
-.main-index .top-container .notifs-container > .notifs-wrapper > div:hover {
-  background-color: #283142;
-  color: #fff;
-  cursor: pointer;
 }
 .main-index .top-container .notifs-container > .notifs-wrapper > strong {
   font-size: 1.1428571428571428rem;

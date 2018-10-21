@@ -50,7 +50,7 @@
     }
 }
 
-/*@media only screen and (max-device-width : 375px) {
+@media only screen and (max-device-width : 375px) {
 
 .accounts-container { 
 
@@ -78,6 +78,7 @@
           display: block; 
         }
         
+        /* Hide table headers (but not display: none;, for accessibility) */
         thead tr { 
           position: absolute;
           top: -9999px;
@@ -94,6 +95,7 @@
         }
         
         td { 
+          /* Behave  like a "row" */
           border: none;
           border-bottom: 1px solid #eee; 
           position: relative;
@@ -101,13 +103,24 @@
         }
         
         td:before { 
+          /* Now like a table header */
           position: absolute;
+          /* Top/left values mimic padding */
           top: 6px;
           left: 6px;
           width: 45%; 
           padding-right: 10px; 
           white-space: nowrap;
         }
+
+        td:nth-of-type(1):before { content: "First Name: "; }
+        td:nth-of-type(2):before { content: "Middle Name: "; }
+        td:nth-of-type(3):before { content: "Last Name: "; }
+        td:nth-of-type(4):before { content: "Position: "; }
+        td:nth-of-type(5):before { content: "Status: "; }
+        td:nth-of-type(6):before { content: "Action: "; }
+        td:nth-of-type(7):before { content: "Action: "; }
+        td:nth-of-type(8):before { content: "Action: "; }      
     }
 
     #myTable2 {
@@ -117,6 +130,7 @@
         display: block; 
       }
       
+      /* Hide table headers (but not display: none;, for accessibility) */
       thead tr { 
         position: absolute;
         top: -9999px;
@@ -133,6 +147,7 @@
         }
       
       td { 
+        /* Behave  like a "row" */
         border: none;
         border-bottom: 1px solid #eee; 
         position: relative;
@@ -140,14 +155,22 @@
       }
       
       td:before { 
+        /* Now like a table header */
         position: absolute;
+        /* Top/left values mimic padding */
         top: 6px;
         left: 6px;
         width: 45%; 
         padding-right: 10px; 
         white-space: nowrap;
       }
+
+      td:nth-of-type(1):before { content: "Office: "; }
+      td:nth-of-type(2):before { content: "Status: "; }
+      td:nth-of-type(3):before { content: "E / D: "; }
+      td:nth-of-type(4):before { content: "Add: "; }
+      td:nth-of-type(5):before { content: "Equipments: "; }
+      td:nth-of-type(6):before { content: "Edit: "; }    
     } 
   }
-}*/
-
+}

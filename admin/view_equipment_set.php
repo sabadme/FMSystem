@@ -36,12 +36,13 @@
             <div class="table-container" id="wrapper">
                 <table>
                     <thead>
-                        <th>Image</th>
-                        <th>Set</th>
-                        <th>Code</th>                        
+                        <th></th>
+                        <th>Code</th>
+                        <th>Name</th>
                         <th>Status</th>
                         <th>Registered</th>
                         <th>Expiration</th>
+                        <th>Action</th>
                     </thead>
 
                 <tbody>

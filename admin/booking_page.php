@@ -103,7 +103,7 @@
                                 <th>Name</th>
                                 <th>Code</th>
                                 <th>Registered</th>
-                                <th>Expiry</th>
+                                <th>Expired</th>
                                 <th></th>
 
                             </tr>
@@ -127,11 +127,11 @@
 
                         ?>
                         <tr>
-                            <td data-th="Name"><?php echo $data_equipment['equipment_name'];?></td>
-                            <td data-th="QR ID"><?php echo $data_equipment['equipment_code'];?></td>
-                            <td data-th="Registered"><?php echo $data_equipment['equipment_start'];?></td>
-                            <td data-th="Expiry"><?php echo $data_equipment['equipment_end'];?></td>
-                            <td data-th="Action"> <input type="checkbox" name="equipment[]" id="<?php echo $data_equipment['id']; ?>" value="<?php echo $data_equipment['id']; ?>"/></td>
+                            <td><?php echo $data_equipment['equipment_name'];?></td>
+                            <td><?php echo $data_equipment['equipment_code'];?></td>
+                            <td><?php echo $data_equipment['equipment_start'];?></td>
+                            <td><?php echo $data_equipment['equipment_end'];?></td>
+                            <td> <input type="checkbox" name="equipment[]" id="<?php echo $data_equipment['id']; ?>" value="<?php echo $data_equipment['id']; ?>"/></td>
                         </tr>
                       
 

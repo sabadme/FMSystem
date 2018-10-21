@@ -11,14 +11,10 @@ $roomsPic = $data_rooms['img'];
 
 ?>
 <tr>
-    <td data-th="Image"><?php echo "<img style='width: 150px;' src='RoomPicture/".$roomsPic."'>" ?></td>
-    <td data-th="Room Name">
-		<form action="" method="POST">
-		<button class="equipment-name" name="room_page" type="submit" value="<?php echo $teachers_room; ?>"><?php echo $data_rooms['building'];?>-<?php echo $data_rooms['room'];?>
-		</button>
-		</form>
-	</td>
-    <td data-th="Floor"><?php echo $data_rooms['floor'];?></td>
+    <td><?php echo "<img style='object-fit: contain; width: 150px;' src='RoomPicture/".$roomsPic."'>" ?></td>
+    <td><?php echo $data_rooms['building'];?>-<?php echo $data_rooms['room'];?></td>
+    <td><?php echo $data_rooms['floor'];?></td>
+    <td><form action="" method="POST"><button name="room_page" type="submit" value="<?php echo $teachers_room; ?>">View</button></form></td>
 </tr>
 <?php
 

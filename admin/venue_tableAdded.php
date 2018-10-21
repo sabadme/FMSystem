@@ -8,7 +8,7 @@ while($data_rooms=mysql_fetch_array($sql_rooms)){
 	$uniqueID++;
 	?>
 	<tr>
-		<td data-th="Image"><?php echo "<img style='width: 150px;' src='RoomPicture/" . $img_filenames . "'>" ?></td>
+		<td data-th="Image"><?php echo "<img style='width: 150px; src='RoomPicture/" . $img_filenames . "'>" ?></td>
 		<td data-th="Room"><?php echo $data_rooms['room']; ?></td>
 		<td data-th="Building"><?php echo $data_rooms['building']; ?></td>
 		<td data-th="Floor"><?php echo $data_rooms['floor']; ?></td>

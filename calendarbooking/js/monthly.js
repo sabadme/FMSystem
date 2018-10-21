@@ -223,7 +223,7 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 			if(startTime) {
 				var endTime = _getEventDetail(event, "endtime");
 				timeHtml = '<div><div class="monthly-list-time-start">' + formatTime(startTime) + "</div>"
-					+ (endTime ? '<div class="monthly-list-time-end">' + formatTime(endTime) + "</div>" : "")
+					+ (endTime ? '<div class="monthly-list-time-end">' + formatTime(endTime) + "</div><button>sdf</button>" : "")
 					+ "</div>";
 			}
 

@@ -42,27 +42,8 @@ if($image==$file_name){
 
     <div class="product-inner-container">
         <div class="image-container">
-            <div class="item">            
-                <div class="clearfix" style="max-width:600px;">
-                    <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                        <li data-thumb="<?php echo "RoomPicture/$image" ?>" style="width: 150px;"> 
-                            <img src="<?php echo "RoomPicture/$image" ?>"/>
-                        </li>
-                        <li data-thumb="<?php echo "RoomPicture/$image" ?>" style="width: 150px;"> 
-                            <img src="<?php echo "RoomPicture/$image" ?>"/>
-                        </li>
-                        <li data-thumb="<?php echo "RoomPicture/$image" ?>" style="width: 150px;"> 
-                            <img src="<?php echo "RoomPicture/$image" ?>"/>
-                        </li>
-                        <li data-thumb="<?php echo "RoomPicture/$image" ?>" style="width: 150px;"> 
-                            <img src="<?php echo "RoomPicture/$image" ?>"/>
-                        </li>
-                        <li data-thumb="<?php echo "RoomPicture/$image" ?>" style="width: 150px;"> 
-                            <img src="<?php echo "RoomPicture/$image" ?>"/>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <img src="images/placeholder-product.png" style="background: url(<?php echo "RoomPicture/$image" ?>) no-repeat;">
+
         </div>
         <div class="product-info-container">
             <span class="equipment-code"><?php echo
@@ -107,10 +88,10 @@ if($image==$file_name){
 
                       ?>
                       <tr>
-                          <td data-th="Image"><?php echo "<img style='width: 50px; height: 50px' src='EquipmentPicture/" . $imageEquipment . "'>" ?></td>
-                          <td data-th="Name"><?php echo $equipmentName; ?></td>
-                          <td data-th="Date Start"><?php echo $equipmentDate; ?></td>
-                          <td data-th="Date End"><?php echo $equipmentTime; ?></td>
+                        <td><?php echo "<img style='width: 50px; height: 50px' src='EquipmentPicture/" . $imageEquipment . "'>" ?></td>
+                          <td><?php echo $equipmentName; ?></td>
+                          <td><?php echo $equipmentDate; ?></td>
+                          <td><?php echo $equipmentTime; ?></td>
                       </tr>
                       <?php
                     }

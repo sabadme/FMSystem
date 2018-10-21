@@ -28,7 +28,7 @@
         </div>
         <a href="logout.php" class="logout"></a>
     </div>
-    <div class="booking-table">
+    <div>
 
     <table id="myTable">
     <thead>

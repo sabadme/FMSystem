@@ -28,7 +28,7 @@ $sql_Assigned = mysql_query("SELECT `status`,  COUNT(*) AS `count` FROM equipmen
 <input type="hidden" id="assigned" value="<?php echo $Unassigned; ?>">
 
 <div class="chart-wrapper">
-  <div id="piechart" class="pie-inner"></div>
+<div id="piechart" class="pie-inner"></div>
 </div>
 
 <!-- <script type="text/javascript" src="PieChart/"></script>
@@ -37,13 +37,6 @@ $sql_Assigned = mysql_query("SELECT `status`,  COUNT(*) AS `count` FROM equipmen
 // Load google charts
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
-
-$(document).ready(function () {
-       var options = {'title':'My Average Day', 'width':550, 'height':400};
-
-      var data = google.visualization.arrayToDataTable([]);
-      drawChart(data, options);
-});
 
 // Draw the chart and set the chart values
 function drawChart() {  
@@ -66,11 +59,11 @@ function drawChart() {
   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
   chart.draw(data, options);*/
 
-  /*var options = {
+  var options = {
     title: 'My Daily Activities'
-  };*/
+  };
 
-  /*var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
     chart.draw(data, options);
   }
 
@@ -82,12 +75,5 @@ function drawChart() {
 
       var data = google.visualization.arrayToDataTable([]);
       drawChart(data, options);
-  });*/
-
- /* var options = {'title':'My Average Day', 'width':550, 'height':400};*/
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.chart(data, options);
-}
+  });
 </script>

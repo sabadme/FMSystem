@@ -21,7 +21,7 @@ if($equipmentID == ""){
 		?>
 	
 	<tr>
-		<td><?php echo "<img style='width: 150px;' src='EquipmentPicture/".$equipPic."'>" ?></td>
+		<td><?php echo "<img style='object-fit: cover; width: 150px;' src='EquipmentPicture/".$equipPic."'>" ?></td>
 		<td><?php echo $equipmentVenue; ?></td>
 		<td><?php echo $data_equipmentBooking['equipment_name']; ?></td>
 		<td><?php echo $data_equipmentBooking['equipment_code']; ?></td>

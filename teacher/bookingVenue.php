@@ -59,32 +59,25 @@ while($data_booking = mysql_fetch_array($sql_booking)){
 
 	?>
 	<tr>
-		<td data-th="Image"><?php echo "<img style='width: 150px;' src='RoomPicture/".$venueImg."'>" ?></td>
-		<td data-th="Venue">
-			<form action="" method="POST">
-				<button class="equipment-name" type="submit" name="viewEquipmentBooking" value="<?php echo $bookingVenue; ?>"><?php echo $building; ?>-<?php echo $bookingVenue; ?>
-				</button>
-			</form>
-		</td>
-		<td data-th="Floor"><?php echo $floor; ?></td>
-		<td data-th="Status"><?php echo $data_booking['status']; ?></td>
-
-		
+		<td><?php echo "<img style='object-fit: contain; width: 150px;' src='RoomPicture/".$venueImg."'>" ?></td>
+		<td><?php echo $bookingVenue; ?></td>
+		<td><?php echo $building; ?></td>
+		<td><?php echo $floor; ?></td>
+		<td><?php echo $data_booking['status']; ?></td>
+		<td><form action="" method="POST"><button type="submit" name="viewEquipmentBooking" value="<?php echo $bookingVenue; ?>">View</button></form></td>
 		
 	</tr>
 	<?php
 	}else if($dd < $dateEnd && $timeEnd > $tt){
 		?>
 	<tr>
-		<td data-th="Image"><?php echo "<img style='width: 150px;' src='RoomPicture/".$venueImg."'>" ?></td>
-		<td>
-			<form action="" method="POST">
-				<button class="equipment-name" type="submit" name="viewEquipmentBooking" value="<?php echo $bookingVenue; ?>"><?php echo $building; ?>-<?php echo $bookingVenue; ?>
-				</button>
-			</form>
-		</td>
-		<td data-th="Floor"><?php echo $floor; ?></td>
-		<td data-th="Status"><?php echo $data_booking['status']; ?></td>			
+		<td><?php echo "<img style='width: 50px; height: 50px' src='RoomPicture/".$venueImg."'>" ?></td>
+		<td><?php echo $bookingVenue; ?></td>
+		<td><?php echo $building; ?></td>
+		<td><?php echo $floor; ?></td>
+		<td><?php echo $data_booking['status']; ?></td>
+		<td><form action="" method="POST"><button type="submit" name="viewEquipmentBooking" value="<?php echo $bookingVenue; ?>">View</button></form></td>
+		
 	</tr>
 	<?php
 	}

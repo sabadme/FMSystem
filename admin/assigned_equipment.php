@@ -58,7 +58,7 @@
 
                 <table id='myTable'>
                     <thead>
-                    <th>Image</th>
+                    <th></th>
                     <th>Name</th>
                     <th>Status</th>
                     </thead>
@@ -81,7 +81,7 @@
                         $image_filename=$data_assigned['equipment_filename'];
                         ?>
                         <tr>
-                            <td><?php echo "<img style='width: 150px;' src='EquipmentPicture/" . $image_filename . "'>" ?></td>
+                            <td><?php echo "<img style='width: 50px; height: 50px' src='EquipmentPicture/" . $image_filename . "'>" ?></td>
                             <td>
                                 <form action="" method="POST">
                                     <button class="equipment-name" title="<?php echo $data_assigned['equipment_name']; ?>" name="equipmentPage"  value="<?php echo $data_assigned['id']; ?>"><?php echo $data_assigned['equipment_name']; ?></button>

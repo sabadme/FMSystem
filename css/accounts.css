@@ -39,103 +39,142 @@
 .accounts-container .user-box div:last-child {
   margin-right: 0;
 }
-/*@media only screen and (max-device-width : 375px) {
-
-.accounts-container { 
-
-    .box-container {
-      .user-box{
-        display: block;
-
-        .user-box-input{
-          width: 100%;
-        }
-      }
-    }
-
-    .openOfficeUpdateModal {
-        .font-size(12);
-        max-width: 110px;
-    }
-
-    .search {
-      max-width: 100%;
-    }
-
-    #myTable1 {
-      table, thead, tbody, th, td, tr { 
-          display: block; 
-        }
-        
-        thead tr { 
-          position: absolute;
-          top: -9999px;
-          left: -9999px;
-        }
-        
-        tr { 
-          border: 1px solid #ccc;
-          padding: 10px; 
-        }
-        tr:nth-child(even) {
-          background-color: #f2f2f2;
-          border: 1px solid #fff;
-        }
-        
-        td { 
-          border: none;
-          border-bottom: 1px solid #eee; 
-          position: relative;
-          padding-left: 50%; 
-        }
-        
-        td:before { 
-          position: absolute;
-          top: 6px;
-          left: 6px;
-          width: 45%; 
-          padding-right: 10px; 
-          white-space: nowrap;
-        }
-    }
-
-    #myTable2 {
-
-
-      table, thead, tbody, th, td, tr { 
-        display: block; 
-      }
-      
-      thead tr { 
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-      }
-      
-      tr { 
-        border: 1px solid #ccc;
-        padding: 10px; 
-      }
-      tr:nth-child(even) {
-          background-color: #f2f2f2;
-          border: 1px solid #fff;
-        }
-      
-      td { 
-        border: none;
-        border-bottom: 1px solid #eee; 
-        position: relative;
-        padding-left: 50%; 
-      }
-      
-      td:before { 
-        position: absolute;
-        top: 6px;
-        left: 6px;
-        width: 45%; 
-        padding-right: 10px; 
-        white-space: nowrap;
-      }
-    } 
+@media only screen and (max-device-width: 375px) {
+  .accounts-container .box-container .user-box {
+    display: block;
   }
-}*/
+  .accounts-container .box-container .user-box .user-box-input {
+    width: 100%;
+  }
+  .accounts-container .openOfficeUpdateModal {
+    font-size: 0.8571428571428571rem;
+    max-width: 110px;
+  }
+  .accounts-container .search {
+    max-width: 100%;
+  }
+  .accounts-container #myTable1 {
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  .accounts-container #myTable1 table,
+  .accounts-container #myTable1 thead,
+  .accounts-container #myTable1 tbody,
+  .accounts-container #myTable1 th,
+  .accounts-container #myTable1 td,
+  .accounts-container #myTable1 tr {
+    display: block;
+  }
+  .accounts-container #myTable1 thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .accounts-container #myTable1 tr {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .accounts-container #myTable1 tr:nth-child(even) {
+    background-color: #f2f2f2;
+    border: 1px solid #fff;
+  }
+  .accounts-container #myTable1 td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  .accounts-container #myTable1 td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .accounts-container #myTable1 td:nth-of-type(1):before {
+    content: "First Name: ";
+  }
+  .accounts-container #myTable1 td:nth-of-type(2):before {
+    content: "Middle Name: ";
+  }
+  .accounts-container #myTable1 td:nth-of-type(3):before {
+    content: "Last Name: ";
+  }
+  .accounts-container #myTable1 td:nth-of-type(4):before {
+    content: "Position: ";
+  }
+  .accounts-container #myTable1 td:nth-of-type(5):before {
+    content: "Status: ";
+  }
+  .accounts-container #myTable1 td:nth-of-type(6):before {
+    content: "Action: ";
+  }
+  .accounts-container #myTable1 td:nth-of-type(7):before {
+    content: "Action: ";
+  }
+  .accounts-container #myTable1 td:nth-of-type(8):before {
+    content: "Action: ";
+  }
+  .accounts-container #myTable2 {
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  .accounts-container #myTable2 table,
+  .accounts-container #myTable2 thead,
+  .accounts-container #myTable2 tbody,
+  .accounts-container #myTable2 th,
+  .accounts-container #myTable2 td,
+  .accounts-container #myTable2 tr {
+    display: block;
+  }
+  .accounts-container #myTable2 thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .accounts-container #myTable2 tr {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .accounts-container #myTable2 tr:nth-child(even) {
+    background-color: #f2f2f2;
+    border: 1px solid #fff;
+  }
+  .accounts-container #myTable2 td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  .accounts-container #myTable2 td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .accounts-container #myTable2 td:nth-of-type(1):before {
+    content: "Office: ";
+  }
+  .accounts-container #myTable2 td:nth-of-type(2):before {
+    content: "Status: ";
+  }
+  .accounts-container #myTable2 td:nth-of-type(3):before {
+    content: "E / D: ";
+  }
+  .accounts-container #myTable2 td:nth-of-type(4):before {
+    content: "Add: ";
+  }
+  .accounts-container #myTable2 td:nth-of-type(5):before {
+    content: "Equipments: ";
+  }
+  .accounts-container #myTable2 td:nth-of-type(6):before {
+    content: "Edit: ";
+  }
+}

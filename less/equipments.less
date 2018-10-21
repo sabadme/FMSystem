@@ -39,27 +39,6 @@
            		margin-right: 0;
            }
         }
-
-        .radioContainer {
-          width: 100%;
-
-          & > div {
-            width: 100%;
-            margin-bottom: 10px;
-
-            input {
-              display: inline-block;
-              width: auto;
-              vertical-align: middle;
-              margin-bottom: 0;
-            }
-
-            span {
-              margin-left: 10px;
-              margin-bottom: 0;
-            }
-          }
-        }
     }
 }
 
@@ -68,7 +47,7 @@
 
   .EQ-Container{
     border: 1px solid @border-color;
-    width: 50%;
+    width: 60%;
 
     .EQ-Img {
       padding: 20px;
@@ -111,46 +90,7 @@
     background: @cobalt;
     color: @white;
     padding: 20px;
-    width: 50%;
-
-    .meter-container {
-      .flex-layout;
-      .flex-align(center);
-      .flex-justify-content(center);
-
-      span {
-        .font-size(12);
-        margin: 0 10px 0 0;
-        font-family: @font-family-light;
-        text-transform: uppercase;
-      }
-
-     /* meter {
-        -webkit-appearance: none;
-        background: gray;
-      }
-      meter > span {
-        height: 14px;
-        margin: 0;
-        max-width: 100px;
-      }*/
-      /*meter[value="calc(<= 50%)"] > span {
-        width: 25%;
-        background: red;
-      }
-      meter[value="50"] > span {
-        width: 50%;
-        background: yellow;
-      }
-      meter[value="75"] > span {
-        width: 75%;
-        background: orange;
-      }
-      meter[value="4"] > span {
-        width: 100%;
-        background: green;
-      }*/
-    }
+    width: 40%;
 
     span{
       margin-top: 20px;
@@ -177,28 +117,5 @@
       text-transform: uppercase;
       margin-bottom: 10px;
       display: block;
-  }
-}
-
-
-@media all and (max-width : 679px) { 
-  .EQ-Page {
-    display: block;
-
-     .EQ-Container {
-      width: 100%;
-
-      .EQ-Img {
-        .item {
-          .clearfix {
-            max-width: 600px !important; 
-          }
-        }
-      }
-    }
-
-     .EQ-Info {
-      width: 100%;
-     }
   }
 }

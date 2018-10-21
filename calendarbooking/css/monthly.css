@@ -1,6 +1,7 @@
 
 /* Overall wrapper */
 .monthly {
+	background: #F3F3F5;
 	color: #545454;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -183,9 +184,9 @@
 }
 
 /* Days that are part of previous or next month */
-/*.monthly-day-blank {
+.monthly-day-blank {
 	background: #F3F3F5;
-}*/
+}
 
 /* Event calendar day number styles */
 .monthly-day-event > .monthly-day-number {

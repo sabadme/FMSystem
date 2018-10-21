@@ -22,20 +22,6 @@ function addActive() {
         });
     }
 
-    /*function loadCarousel() {
-        var itemListContainer = $('.EQ-Container .EQ-Img');
-            itemListContainer.show();
-    }
-
-    function owlCarousel() {
-        $('.EQ-Container .EQ-Img').owlCarousel({
-            loop: false,
-            margin: 5,
-            items: 1,
-            nav: true
-        });
-    }*/
-
 //Hide notif count 
    $(function(){
         $(document).on("click" ,"#valueNotif" , function(){
@@ -103,7 +89,7 @@ function addActive() {
         $(modal).css('display', 'none');
     }
 
-    /*function myFunction() {
+    function myFunction() {
       var input = document.getElementById("Search");
       var filter = input.value.toLowerCase();
       var divTarget = document.getElementsByClassName('target');
@@ -115,8 +101,7 @@ function addActive() {
           divTarget[i].style.display = "none";
         }
       }
-    }*/
-
+    }
 
     function tableSearch() {
       var input = document.getElementById("Search");
@@ -133,7 +118,6 @@ function addActive() {
     }
 
     function updatteacher() {
-        var modal = $('.modal');
         var teacherORstudent = $("select#teacherORstudent").val();
         var fname =$("input#fname").val();
         var mname =$("input#mname").val();
@@ -188,26 +172,12 @@ function addActive() {
         tabActive();
         UpdateRooms();
         UpdateVenue();
-       /* myFunction();*/
-       /* updatteacher();*/
-        /*loadCarousel();
-        owlCarousel();*/
+        myFunction();
+        updatteacher();
 
         setInterval(function() {
             $("#bookingdate").load('teacher/dateandtime.php');
         }, 7000);
-
-
-        $('#image-gallery').lightSlider({
-            gallery:true,
-            item:1,
-            thumbItem:9,
-            slideMargin: 0,
-            speed:500,
-            onSliderLoad: function() {
-                $('#image-gallery').removeClass('cS-hidden');
-            }  
-        });
     });
 
     jQuery(window).on('unload', function () {

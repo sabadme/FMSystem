@@ -187,8 +187,8 @@ $dataAccount = mysql_fetch_array($sqlAccount);
 		<option>Fixed</option>
 		<option>Not Fixed</option>
 	</select>
-	<textarea class="textarea" name="commentTechnician" placeholder="Enter message..."></textarea>
-	<button name="technicianReportSend" type="submit" value="<?php echo $equipment_id; ?>" style="margin-top: 10px;">Send</button>
+	<textarea class="textarea" name="commentTechnician"></textarea>
+	<button name="technicianReportSend" type="submit" value="<?php echo $equipment_id; ?>">Send</button>
 	</form>
 	</div>
 	</div>

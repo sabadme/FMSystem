@@ -21,9 +21,9 @@
 		<header>
 
 			<div class="logo-container">
-				<img src="images/FMSLOGO.png" />
+				<img src="images/lccb.png" />
 
-				<span>FACILITY MANAGEMENT SYSTEM</span>
+				<span>Facility Management System</span>
 			</div>
 
 			<div class="login-container">
@@ -54,6 +54,23 @@
 				<img src="images/213.jpg">
 			</div>
 
+			<div class="aboutus" id="about">
+				<h1>ABOUT US</h1>
+				<p>The Facility Management System for LCC-B is an online based system that
+				will digitize the process of facilities and equipment monitoring, inventory updates,
+				maintenance reports, and booking. It gives the users the ability to do these
+				procedures and transactions conveniently.
+				It features registered school facilities and equipment, their
+				generated QR code (Quick Response Code Technology), and the complete details
+				regarding their maintenance and repair records. Monitoring systems are ideally
+				used by schools when they are monitoring school equipment, usually for the
+				purpose of repair and maintenance updates; regularly checking the facility and
+				equipment’s condition. It allows the administrator to supervise the maintenance
+				without it becoming time-consuming and tedious. The QR Code will help the administrator in checking the equipment
+				status and repair records.
+				</p>
+			</div>
+
 			<div class="whats-container" id="what">
 				<h1>WHAT'S INSIDE?</h1>
 
@@ -62,7 +79,7 @@
 						<img src="images/scaning.png">
 						<div>				
 							<span>MANAGE EQUIPMENTS</span>
-							<p>The system created to assist in managing facilities and equipment. The administrator can add an equipment individually, by set, and by group. The equipment can then be assigned to a room where they can be monitored and located by the special feature of the QR scaner, viewing them accurately and remotely.
+							<p>The system created to assist in managing facilities and equipment. The administrator can add an equipment individually, by set, and by group. The equipment can then be assigned to a room.
 							</p>
 						</div>
 					</div>
@@ -86,22 +103,6 @@
 						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="aboutus" id="about">
-				<h1>ABOUT US</h1>
-				<p><b></b>The Facility Management System for La Consolacion College - Bacolod is an online based system that will digitize the process of facilities and equipment monitoring, inventory updates,
-				maintenance reports, and booking. It gives the users the ability to do these
-				procedures and transactions conveniently.
-				It features registered school facilities and equipment, their
-				generated QR code (Quick Response Code Technology), and the complete details
-				regarding their maintenance and repair records. Monitoring systems are ideally
-				used by schools when they are monitoring school equipment, usually for the
-				purpose of repair and maintenance updates; regularly checking the facility and
-				equipment’s condition. It allows the administrator to supervise the maintenance
-				without it becoming time-consuming and tedious. The QR Code will help the administrator in checking the equipment
-				status and repair records.
-				</p>
 			</div>
 		</div>
 

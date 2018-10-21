@@ -20,11 +20,11 @@ $data_rooms = mysql_fetch_array($sql_rooms);
 $roomImg = $data_rooms['img'];
 ?>
 <tr>
-	<td data-th="Image"><?php echo "<img style='width: 150px;' src='RoomPicture/".$roomImg."'>" ?></td>
-	<td data-th="Venue"><?php echo $venue; ?></td>
-	<td data-th="Date Start"><?php echo $data_booking['date_start'] ?>  <?php echo date("H:i:A", $timestamp); ?></td>
-	<td data-th="Date End"><?php echo $data_booking['date_end'] ?>    <?php echo date("H:i:A", $timestamps); ?></td>
-	<td data-th="Action"><form action="" method="POST"><button type="submit" name="viewEquipmentBooking" value="<?php echo $venue; ?>">View</button></form></td>
+	<td><?php echo "<img style='width: 50px; height: 50px' src='RoomPicture/".$roomImg."'>" ?></td>
+	<td><?php echo $venue; ?></td>
+	<td><?php echo $data_booking['date_start'] ?>  <?php echo date("H:i:A", $timestamp); ?></td>
+	<td><?php echo $data_booking['date_end'] ?>    <?php echo date("H:i:A", $timestamps); ?></td>
+	<td><form action="" method="POST"><button type="submit" name="viewEquipmentBooking" value="<?php echo $venue; ?>">View</button></form></td>
 </tr>
 <?php
 }

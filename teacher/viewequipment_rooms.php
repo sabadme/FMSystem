@@ -14,38 +14,7 @@ if(isset($_REQUEST['viewequipment_rooms'])){
   mysql_select_db($db);
  ?>
 
-<div class="manage-container">
-	<div class="top-container">
-        <strong>ROOMS</strong>
-        <span><?php echo $data_teacherName['account']; ?></span>
-
-        <div class="notifs-container">
-            <strong class="notifs" value="<?php echo $accountname; ?>" id="valueNotif"></strong>
-            <span id="teacherBookingApproved" class="counter"></span>
-
-            <div class="notifs-wrapper">
-                <strong>Notifications</strong>
-
-                <table id="myTable">
-                    <thead>
-                         <th>Venue</th>
-                         <th>Date Start</th>
-                         <th>Date End</th>
-                    </thead>
-
-                    <tbody>
-                        <?php include"teacher/sbookingApproved.php"; ?>
-                    </tbody>
-                </table>
-
-                <form action="" method="POST">
-                    <button title="Notifications" name="notifs" type="submit">View All</button>
-                </form>
-            </div>
-
-        </div>
-        <a href="logout.php" class="logout"></a>
-    </div>
+<div class="manage-container with-banner">
 	<strong class="title"><?php echo $viewequipment_rooms; ?></strong>
 
 	<div class="manage-inner-container">
@@ -95,7 +64,7 @@ if(isset($_REQUEST['viewequipment_rooms'])){
 
 						?>
 						<tr>
-							 <td><?php echo "<img style='width: 150px;' src='EquipmentPicture/" . $equipmentPicture . "'>" ?></td>
+							 <td><?php echo "<img style='width: 50px; height: 50px' src='EquipmentPicture/" . $equipmentPicture . "'>" ?></td>
 							 <td><?php echo $equipmentName; ?></td>
 							 <td><?php echo $equipmentStart; ?></td>
 							 <td><?php echo $equipmentEnd; ?></td>

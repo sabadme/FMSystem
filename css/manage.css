@@ -111,7 +111,8 @@
   display: block;
 }
 .manage-container.registration .table-container {
-  margin-top: 10px;
+  width: 70%;
+  margin-left: 40px;
 }
 .manage-container.registration .set-container .table-container {
   width: 100%;
@@ -122,9 +123,4 @@
 }
 .manage-container.venue-container .tabs li:nth-of-type(3) {
   left: 227px;
-}
-@media only screen and (max-device-width: 768px) {
-  .tabs {
-    display: block;
-  }
 }

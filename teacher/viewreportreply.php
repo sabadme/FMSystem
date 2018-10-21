@@ -1,36 +1,3 @@
-<div class="report-container">	
-	<div class="top-container">
-        <strong>REPORTS</strong>
-        <span><?php echo $data_teacherName['account']; ?></span>
-
-        <div class="notifs-container">
-            <strong class="notifs" value="<?php echo $accountname; ?>" id="valueNotif"></strong>
-            <span id="teacherBookingApproved" class="counter"></span>
-
-            <div class="notifs-wrapper">
-                <strong>Notifications</strong>
-
-                <table id="myTable">
-                    <thead>
-                         <th>Venue</th>
-                         <th>Date Start</th>
-                         <th>Date End</th>
-                    </thead>
-
-                    <tbody>
-                        <?php include"teacher/sbookingApproved.php"; ?>
-                    </tbody>
-                </table>
-
-                <form action="" method="POST">
-                    <button title="Notifications" name="notifs" type="submit">View All</button>
-                </form>
-            </div>
-
-        </div>
-        <a href="logout.php" class="logout"></a>
-    </div>
-
 <table>
 		<thead>
 			<tr>
@@ -84,4 +51,4 @@ while($data_report=mysql_fetch_array($report)){
  ?>
  </tbody>
 	</table>
-</div>
+

@@ -26,7 +26,7 @@ $data_officeName = mysql_fetch_array($sql_officeName);
 
             <table id="myTable">
                 <thead>
-                        <th>Venue</th>
+                        <th data-type="Venue">Venue</th>
                         <th>Date Start</th>
                         <th>Date End</th>
                         <th>Status</th>
@@ -53,7 +53,7 @@ $data_officeName = mysql_fetch_array($sql_officeName);
        <table id="myTable">
         <thead>
             <tr>
-                <th>Image</th>
+                <th></th>
                 <th>Room</th>
                 <th>Date Start</th>
                 <th>Date End</th>
@@ -71,7 +71,7 @@ $data_officeName = mysql_fetch_array($sql_officeName);
        <table id="myTable">
         <thead>
             <tr>
-                <th>Image</th>
+                <th></th>
                 <th>Equipment</th>
                 <th>Code</th>
                 <th>Registered Date</th>

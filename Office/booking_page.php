@@ -32,9 +32,9 @@
     <a href="logout.php" class="logout"></a>
 </div>
 
-   <!--  <strong class="title" id="bookingdate">
+    <strong class="title" id="bookingdate">
     
-</strong> -->
+</strong>
     <div class="booking-wrapper-container">
         <div class="booking-wrapper">
             <form action="" method="POST">
@@ -84,7 +84,7 @@
 
                     <div class="equipments-field">
                     <label>Select Equipment(s)</label>
-                    <input class="search" type="text" placeholder="Search equipments..."/>
+                    <input class="search" type="text" placeholder="search equipments..."/>
                     <div class="equipments-wrapper">
                         <?php
                         include "admin/connection.php";
@@ -161,7 +161,7 @@
             </form>
  
         </div>
-        <!-- <div class="booking-table">
+        <div class="booking-table">
             <strong class="subtitle">Booking Information</strong>
             <div class="table-container" id="wrapper">
                 
@@ -179,11 +179,11 @@
                     </thead>
 
                     <tbody>
-                    <?php //include"Office/booking_table.php"; ?>
+                    <?php include"Office/booking_table.php"; ?>
                     </tbody>
                 </table>
             </div>
-        </div> -->
+        </div>
     </div>
 </div>
 

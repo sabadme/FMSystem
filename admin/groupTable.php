@@ -18,24 +18,13 @@ while($data_equipment=mysql_fetch_array($equipment_sql)){
 
 	?>
 	<tr>
-		<td data-th="Equipment">
-			<form action="" method="POST">
-				<button class="equipment-name" name="viewGroupEquipment" type="submit" value="<?php echo $data_equipment['equipment_name']; ?>"><?php echo $data_equipment['equipmentType'] ?>-<?php echo $data_equipment['equipment_name']; ?>
-				</button>
-			</form>
-		</td>
-
-		<td data-th="QR Code"><?php echo $data_sqlEquipment_Group['equipment_code']; ?></td>
-		<td data-th="Quantity"><?php echo $count; ?></td>
-		<td data-th="Date Start"><?php echo $data_sqlEquipment_Group['equipment_start']; ?></td>
-		<td data-th="Date End"><?php echo $data_sqlEquipment_Group['equipment_end']; ?></td>
-		
-		<td data-th="Action" style="background: red">
-			<form action="" method="POST">
-				<button class="action" type="submit" name="update_equipment" value="<?php echo $data_equipment['id']; ?>">Update
-				</button>
-			</form>
-		</td>
+	<td data-th="QR Code"><?php echo $data_sqlEquipment_Group['equipment_code']; ?></td>
+	<td data-th="Equipment"><?php echo $data_equipment['equipmentType'] ?>-<?php echo $data_equipment['equipment_name']; ?></td>
+	<td data-th="Quantity"><?php echo $count; ?></td>
+	<td data-th="Date Start"><?php echo $data_sqlEquipment_Group['equipment_start']; ?></td>
+	<td data-th="Date End"><?php echo $data_sqlEquipment_Group['equipment_end']; ?></td>
+	<td data-th="Action"><form action="" method="POST"><button name="viewGroupEquipment" type="submit" value="<?php echo $data_equipment['equipment_name']; ?>">View</button></form></td>
+	<td data-th="Action"><form action="" method="POST"><button class="action" type="submit" name="update_equipment" value="<?php echo $data_equipment['id']; ?>">Update</button></form></td>
 	</tr>
 	<?php
 }

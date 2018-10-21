@@ -73,9 +73,9 @@
 					<th>Last Name</th>
 					<th>Position</th>
 					<th>Status</th>
-					<th>Action</th>
-                    <th>Action</th>
-                    <th>Action</th>
+					<th></th>
+                    <th></th>
+                    <th></th>
 				</thead>
 
 				<tbody>

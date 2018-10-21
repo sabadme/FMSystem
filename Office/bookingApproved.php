@@ -18,10 +18,10 @@ while($data_booking = mysql_fetch_array($sql_booking)){
 ?>
 <tr>
 	
-	<td data-type="Venue"><?php echo $data_booking['venue']; ?></td>
-	<td data-type="Date Start"><?php echo $data_booking['date_start']; ?>  <?php echo date("H:i:A", $timestampB); ?></td>
-	<td data-type="Date End"><?php echo $data_booking['date_end']; ?>  <?php echo date("H:i:A", $timestampsB); ?></td>
-	<td data-type="Status">Approved</td>
+	<td><?php echo $data_booking['venue']; ?></td>
+	<td><?php echo $data_booking['date_start']; ?>  <?php echo date("H:i:A", $timestampB); ?></td>
+	<td><?php echo $data_booking['date_end']; ?>  <?php echo date("H:i:A", $timestampsB); ?></td>
+	<td>Approved</td>
 </tr>
 <?php
 }

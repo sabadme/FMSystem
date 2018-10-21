@@ -12,8 +12,8 @@
 				<table id="myTable">
 				<thead>
 					<th>Equipment</th>
-					<th>EQ Name</th>
-					<th>EQ Code</th>
+					<th>Equipment Name</th>
+					<th>Equipment Code</th>
 					<th>Report</th>
 				</thead>
 

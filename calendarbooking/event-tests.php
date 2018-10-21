@@ -1,40 +1,30 @@
-<div class="booking-container">
-	<div class="top-container">
-        <strong>BOOKING CALENDAR</strong>
-        <div class="notifs-container">
-            <strong id="adminNotifHide" class="notifs"></strong>
-            <span id="count" class="counter"></span>
-
-            <div class="notifs-wrapper">
-                <strong>Notifications</strong>
-
-                <table id="myTable">
-                    <thead>
-                        <th>Name</th>
-                        <th>Equipment</th>
-                        <th>Message</th>
-                    </thead>    
-
-                    <tbody>
-                        <?php include"admin/viewreport_table.php"; ?>
-                    </tbody>
-                </table>
-
-                <form action="" method="POST">
-                    <button title="Notifications" name="notifs" type="submit">View All</button>
-                </form>
-            </div>
-
-        </div>
-        <a href="logout.php" class="logout"></a>
-    </div>
-
+<!doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset='utf-8'>
+<head>
+    <title>Monthly Booking</title>
+	<link rel="stylesheet" href="calendarbooking/css/monthly.css">
+	<style type="text/css">
+		body {
+			font-family: Calibri;
+			background-color: #f0f0f0;
+			padding: 0em 1em;
+		}
+		#mycalendar {
+			width: 100%;
+			margin: 2em auto 0 auto;
+			max-width: 80em;
+			border: 1px solid #666;
+		}
+	</style>
+</head>
+<body>
+<h1>Monthly Booking</h1><br><br>
 <div class="monthly" id="mycalendar"></div>
 <script type="text/javascript" src="calendarbooking/js/jquery.js"></script>
 <script type="text/javascript" src="calendarbooking/js/monthly.js"></script>
-
-</div>
-
 	
 <script type="text/javascript">
 
@@ -94,3 +84,4 @@
 		});
 	});
 </script>
+</body></html>

@@ -3,27 +3,12 @@
 
 .main-index  {
 
-	header {
+	header, footer {
 		display: none;
 	}
 
 	.page-main-inner {
 	    padding: 70px 20px 0;
-	}
-
-	.lSPager.lSGallery {
-		.flex-layout;
-		margin: 15px auto !important;
-
-		li {
-			width: 100% !important;
-			max-width: 150px;
-
-			img {
-				margin: 0;
-				max-width: 100%;
-			}
-		}
 	}
 
 	.top-container {
@@ -85,7 +70,6 @@
 		}
 
 		.notifs {
-
 			&:hover {
 				opacity: 0.9;
 			}
@@ -102,32 +86,19 @@
 			}
 
 			&.active ~ .notifs-wrapper {
-				z-index: 999;
 				display: block;
 			    position: absolute;
-			    right: 0;
-			    top: 25px;
-			    width: 400px;
+			    right: 52px;
+			    top: 50px;
+			    width: 100%;
+			    max-width: 322px;
 			    background: @white;
-			    border: 1px solid #ccc;			    
+			    border: 1px solid #ccc;
 			}
 
 			&-container {
 				& > .notifs-wrapper {
 					display: none;
-
-					& > div {
-						padding: 5px 10px;
-					    display: block;
-					    border-bottom: 1px solid black;
-					    height: 40px;
-
-						    &:hover {
-							background-color: @cobalt;
-							color: @white;
-							cursor: pointer;
-						}
-					}					
 
 					& > strong {
 						.font-size(16);

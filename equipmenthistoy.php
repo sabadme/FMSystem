@@ -1,22 +1,3 @@
-<div class="dashboard-container">
-
-<div class="top-container">
-        <strong>EQUIPMENT ACTIVITY</strong>
-        
-        <div class="notifs-container">
-            <strong id="adminNotifHide" class="notifs"></strong>
-            <span id="count" class="counter"></span>
-
-            <div class="notifs-wrapper">
-                <strong>Notifications</strong>
-                    <?php include"admin/viewreport_table.php"; ?>                
-            </div>
-
-        </div>
-       
-        <a href="logout.php" class="logout" title="logout"></a>
-    </div>
-
 <table>
 <thead>
 	<tr>
@@ -88,5 +69,3 @@ while($dataView = mysql_fetch_array($sqlView)){
  ?>
  </tbody>
  </table>
-
- </div>

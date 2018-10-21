@@ -14,21 +14,16 @@ if(isset($status)){
     <html>
     <head>
         <title>Monitoring</title>
-        <link rel="stylesheet" type="text/css" href="css/lightslider.css"">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
         <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
         <link type="text/css" rel="stylesheet" href="css/simplePagination.css"/>
-        <link rel="stylesheet" href="calendarbooking/css/monthly.css">
-        
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/jQuery.print.js"></script>
         <script type="text/javascript" src="js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="js/jquery.simplePagination.js"></script>
         <script type="text/javascript" src="js/instascan.min.js"></script>
-        <script type="text/javascript" src="js/monitoring.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="js/lightslider.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
 
@@ -44,28 +39,21 @@ if(isset($status)){
    right: 50px;
   }
   .wrapper {
-    /*display: table-cell;
+    display: table-cell;
     vertical-align: bottom;
     height: auto;
-    width:200px;*/
+    width:200px;
+  }
+  .alert_default
+  {
+    display: block;
+    margin: 20px 20px;
+   color: #333333;
+   background-color: #f2f2f2;
+   border-color: #cccccc;
   }
 
-  .content {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-  }
 
-  .alert_default  {
-    width: auto;
-    padding: 10px 7px;
-    background: #283142;
-    color: white;
-    font-size: 12px;
-    margin:0 10px 5px 0;
-    border-radius: 5px;
-    z-index: 998;
-  }
 
   </style>
 
@@ -170,24 +158,20 @@ if(isset($status)){
 
 
         </div>
-
-
-
         <!-- NOTIFACATION POP UP -->
 
                     <div id="alert_popover">
                          <div class="wrapper">
                             <div class="content">
 
-                            </div>
+                                 </div>
                          </div>
                    </div>
 
-<?php include "footer.php"; ?>
+        <?php include "footer.php"; ?>
     </div>
-
-
     </body>
+
 
     </html>
     <?php
@@ -196,10 +180,4 @@ if(isset($status)){
 }
 
 ?>
-
-<script>
-    $(document).ready(function() {
-        $('.main-index footer').insertAfter('.main-index .page-main');
-    });
-    
-</script>
+<script type="text/javascript" src="js/monitoring.js"></script>
